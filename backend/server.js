@@ -8,6 +8,19 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+const corsOptions = {
+    origin: 'https://product-papa-mantap.netlify.app/',
+    optionsSuccessStatus: 200
+  };
+  
+  app.use(cors(corsOptions));
+  
+  // Route dan middleware lain
+  app.get('/api/products', (req, res) => {
+    // logika API
+    res.json({ message: 'API berjalan lancar' });
+  });
+
 const mongoUri = process.env.MONGO_URI || 'mongodb://localhost:27017/productpromo';
 mongoose.connect(mongoUri, {
   useNewUrlParser: true,
