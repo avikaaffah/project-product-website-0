@@ -1,3 +1,5 @@
+version: '3.8'
+
 services:
   mongo:
     image: mongo:6
@@ -17,16 +19,16 @@ services:
     depends_on:
       - mongo
 
-  frontend:
-    build: ./frontend
-    container_name: frontend
-    ports:
-      - "3000:80"
-    depends_on:
-      - backend
-    volumes:
-      - ./frontend:/usr/share/nginx/html
-      - ./backend/product-data:/backend/product-data
+  # frontend:
+  #   build: ./frontend
+  #   container_name: frontend
+  #   ports:
+  #     - "3000:80"
+  #   depends_on:
+  #     - backend
+  #   volumes:
+  #     - ./frontend:/usr/share/nginx/html
+  #     - ./backend/product-data:/backend/product-data
 
 volumes:
   mongo-data:
