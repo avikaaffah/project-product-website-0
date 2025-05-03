@@ -15,11 +15,11 @@ const corsOptions = {
   
   app.use(cors(corsOptions));
   
-  // Route dan middleware lain
-  app.get('/api/products', (req, res) => {
-    // logika API
-    res.json({ message: 'API berjalan lancar' });
-  });
+//   // Route dan middleware lain
+//   app.get('/api/products', (req, res) => {
+//     // logika API
+//     res.json({ message: 'API berjalan lancar' });
+//   });
 
 const mongoUri = process.env.MONGO_URI || 'mongodb://localhost:27017/productpromo';
 mongoose.connect(mongoUri, {
