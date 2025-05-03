@@ -9,7 +9,7 @@ const app = express();
 app.use(express.json());
 
 const corsOptions = {
-    origin: ['https://product-papa-mantap.netlify.app', 'http://localhost'],
+    origin: ['https://product-papa-mantap.netlify.app', 'http://localhost:5500'],
     optionsSuccessStatus: 200
   };
   app.use(cors(corsOptions));
