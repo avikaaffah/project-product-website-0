@@ -8,11 +8,20 @@ const app = express();
 // app.use(cors());
 app.use(express.json());
 
+// const corsOptions = {
+//     origin: ['https://product-papa-mantap.netlify.app', 'http://localhost:5500'],
+//     optionsSuccessStatus: 200
+//   };
+//   app.use(cors(corsOptions));
+
 const corsOptions = {
-    origin: ['https://product-papa-mantap.netlify.app', 'http://localhost:5500'],
-    optionsSuccessStatus: 200
-  };
-  app.use(cors(corsOptions));
+  origin: ['http://localhost:5500'],
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  optionsSuccessStatus: 200
+};
+
+app.use(cors(corsOptions));
 
 //   // Route dan middleware lain
 //   app.get('/api/products', (req, res) => {
