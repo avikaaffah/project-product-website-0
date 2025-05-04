@@ -9,7 +9,7 @@ burger.addEventListener('click', () => {
 // Fetch dan render produk
 async function fetchAndRenderProducts() {
   try {
-    const response = await fetch('http://34.101.109.175:5000/api/products');
+    const response = await fetch('/api/products');
     const products = await response.json();
 
     const container = document.getElementById('product-container');
