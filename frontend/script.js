@@ -9,7 +9,7 @@ if (burger && navLinks) {
 }
 
 // API URL configuration
-const API_URL = 'http://localhost:5000'; // Make sure this points to your backend server
+const API_URL = 'http://34.101.109.175:5000'; // Make sure this points to your backend server
 
 // Fetch and render products
 async function fetchAndRenderProducts() {
