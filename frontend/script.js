@@ -2,25 +2,58 @@
 const burger = document.getElementById('burger');
 const navLinks = document.getElementById('nav-links');
 
-burger.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
-});
+if (burger && navLinks) {
+  burger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+}
 
-// Fetch dan render produk
+// API URL configuration
+const API_URL = 'http://localhost:5000'; // Make sure this points to your backend server
+
+// Fetch and render products
 async function fetchAndRenderProducts() {
   try {
-    const response = await fetch('/api/products');
+    const productContainer = document.getElementById('product-container');
+    if (!productContainer) {
+      console.warn('Product container not found in the DOM');
+      return;
+    }
+    
+    // Show loading state
+    productContainer.innerHTML = '<p>Loading products...</p>';
+    
+    console.log('Fetching products from:', `${API_URL}/api/products`);
+    const response = await fetch(`${API_URL}/api/products`);
+    
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    
+    const contentType = response.headers.get('content-type');
+    if (!contentType || !contentType.includes('application/json')) {
+      throw new Error('Response is not JSON');
+    }
+    
     const products = await response.json();
+    console.log('Products fetched:', products);
 
-    const container = document.getElementById('product-container');
-    container.innerHTML = '';
+    if (!Array.isArray(products) || products.length === 0) {
+      productContainer.innerHTML = '<p>No products found.</p>';
+      return;
+    }
 
+    // Clear container
+    productContainer.innerHTML = '';
+
+    // Group products by category
     const grouped = products.reduce((acc, product) => {
       if (!acc[product.category]) acc[product.category] = [];
       acc[product.category].push(product);
       return acc;
     }, {});
 
+    // Create product sections by category
     for (const category in grouped) {
       const section = document.createElement('section');
       section.className = 'category';
@@ -38,8 +71,12 @@ async function fetchAndRenderProducts() {
         card.className = 'card';
 
         const img = document.createElement('img');
-        img.src = product.imageUrl;
+        img.src = product.imageUrl || 'placeholder.jpg';
         img.alt = product.name;
+        img.onerror = () => {
+          img.src = 'placeholder.jpg';
+          img.alt = 'Image not available';
+        };
         card.appendChild(img);
 
         const content = document.createElement('div');
@@ -53,23 +90,33 @@ async function fetchAndRenderProducts() {
         desc.textContent = product.description;
         content.appendChild(desc);
 
-        const link = document.createElement('a');
-        link.href = product.pdfUrl;
-        link.target = '_blank';
-        link.rel = 'noopener noreferrer';
-        link.innerHTML = 'View PDF Details <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2h9l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zM15 3.5V9h4.5L15 3.5z"/></svg>';
-        content.appendChild(link);
+        if (product.pdfUrl) {
+          const link = document.createElement('a');
+          link.href = product.pdfUrl;
+          link.target = '_blank';
+          link.rel = 'noopener noreferrer';
+          link.innerHTML = 'View PDF Details <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2h9l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zM15 3.5V9h4.5L15 3.5z"/></svg>';
+          content.appendChild(link);
+        }
 
         card.appendChild(content);
         productsDiv.appendChild(card);
       });
 
       section.appendChild(productsDiv);
-      container.appendChild(section);
+      productContainer.appendChild(section);
     }
   } catch (error) {
     console.error('Error fetching products:', error);
+    const container = document.getElementById('product-container');
+    if (container) {
+      container.innerHTML = `<p>Error loading products: ${error.message}</p>`;
+    }
   }
 }
 
-document.addEventListener('DOMContentLoaded', fetchAndRenderProducts);
+// Initialize the application
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('DOM fully loaded');
+  fetchAndRenderProducts();
+});
