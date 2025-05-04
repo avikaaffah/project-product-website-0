@@ -8,9 +8,6 @@ if (burger && navLinks) {
   });
 }
 
-// API URL configuration
-const API_URL = 'http://34.101.109.175:5000'; // Make sure this points to your backend server
-
 // Fetch and render products
 async function fetchAndRenderProducts() {
   try {
@@ -23,8 +20,9 @@ async function fetchAndRenderProducts() {
     // Show loading state
     productContainer.innerHTML = '<p>Loading products...</p>';
     
-    console.log('Fetching products from:', `${API_URL}/api/products`);
-    const response = await fetch(`${API_URL}/api/products`);
+    // In Docker environment, we use relative URLs because nginx handles the proxying
+    console.log('Fetching products from: /api/products');
+    const response = await fetch('/api/products');
     
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
@@ -32,6 +30,8 @@ async function fetchAndRenderProducts() {
     
     const contentType = response.headers.get('content-type');
     if (!contentType || !contentType.includes('application/json')) {
+      const text = await response.text();
+      console.error('Response is not JSON:', text);
       throw new Error('Response is not JSON');
     }
     
@@ -110,7 +110,13 @@ async function fetchAndRenderProducts() {
     console.error('Error fetching products:', error);
     const container = document.getElementById('product-container');
     if (container) {
-      container.innerHTML = `<p>Error loading products: ${error.message}</p>`;
+      container.innerHTML = `
+        <div class="error-message">
+          <h3>Error loading products</h3>
+          <p>${error.message}</p>
+          <button onclick="fetchAndRenderProducts()">Try Again</button>
+        </div>
+      `;
     }
   }
 }

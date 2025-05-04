@@ -11,29 +11,29 @@ const products = [
     category: "Alignment",
     name: "Acoem_AT-300",
     description: "The Precision Alignment Tool X1 offers unparalleled accuracy for industrial and mechanical alignment tasks. Lightweight and easy to use.",
-    pdfUrl: "/product-data/alignment/1/Acoem_AT-300.pdf",
-    imageUrl: "/product-data/alignment/1/Acoem_AT-300.png"
+    pdfUrl: "http://127.0.0.1:5000/product-data/alignment/1/Acoem_AT-300.pdf",
+    imageUrl: "http://127.0.0.1:5000/product-data/alignment/1/Acoem_AT-300.png"
   },
   {
     category: "Alignment",
     name: "Acoem_AT-400",
     description: "Alignment Pro 3000 is designed for professionals requiring fast and reliable alignment solutions with advanced sensor technology.",
-    pdfUrl: "/product-data/alignment/2/Acoem_AT-400.pdf",
-    imageUrl: "/product-data/alignment/2/Acoem_AT-400.png"
+    pdfUrl: "http://127.0.0.1:5000/product-data/alignment/2/Acoem_AT-400.pdf",
+    imageUrl: "http://127.0.0.1:5000/product-data/alignment/2/Acoem_AT-400.png"
   },
   {
     category: "Alignment",
     name: "Acoem_AT-400",
     description: "Alignment Pro 3000 is designed for professionals requiring fast and reliable alignment solutions with advanced sensor technology.",
-    pdfUrl: "/product-data/alignment/2/Acoem_AT-400.pdf",
-    imageUrl: "/product-data/alignment/2/Acoem_AT-400.png"
+    pdfUrl: "http://127.0.0.1:5000/product-data/alignment/2/Acoem_AT-400.pdf",
+    imageUrl: "http://127.0.0.1:5000/product-data/alignment/2/Acoem_AT-400.png"
   },
   {
     category: "Alignment",
     name: "Acoem_AT-300",
     description: "The Precision Alignment Tool X1 offers unparalleled accuracy for industrial and mechanical alignment tasks. Lightweight and easy to use.",
-    pdfUrl: "/product-data/alignment/1/Acoem_AT-300.pdf",
-    imageUrl: "/product-data/alignment/1/Acoem_AT-300.png"
+    pdfUrl: "http://127.0.0.1:5000/product-data/alignment/1/Acoem_AT-300.pdf",
+    imageUrl: "http://127.0.0.1:5000/product-data/alignment/1/Acoem_AT-300.png"
   },
   
   {
