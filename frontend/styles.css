@@ -80,6 +80,119 @@ body {
     max-width: 600px;
     margin: 0 auto;
   }
+
+  .hero-slider {
+    position: relative;
+    overflow: hidden;
+    height: 600px; /* Adjust as needed */
+    width: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  .slides-container {
+    display: flex;
+    width: 300%; /* 3 slides */
+    height: 100%;
+    transition: transform 0.6s ease-in-out;
+    will-change: transform;
+  }
+  
+  .slide {
+    flex: 0 0 33.3333%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  .slide::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .slide-text {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    pointer-events: none; /* Prevent interaction when hidden */
+  }
+  
+  /* Active slide text visible with fade and slide up */
+  .slide-text.active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+  
+  /* Navigation Arrows */
+  .nav-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 0 12px;
+    cursor: pointer;
+    z-index: 10;
+    user-select: none;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-arrow:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light transparent white */
+  }
+  
+  .nav-arrow.prev {
+    left: 10px;
+  }
+  
+  .nav-arrow.next {
+    right: 10px;
+  }
+  
+  /* Navigation Dots */
+  .nav-dots {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+  }
+  
+  .nav-dots .dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 6px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-dots .dot.active,
+  .nav-dots .dot:hover {
+    background-color: white;
+  }
+  
   
   /* Main content */
   main {
@@ -225,3 +338,122 @@ body {
     }
   }
   
+  /* Modal backdrop */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+/* Show modal */
+.modal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Modal content box */
+.modal-content {
+  background: #fff;
+  width: 80vw;
+  max-width: 900px;
+  max-height: 80vh;
+  border-radius: 8px;
+  overflow-y: auto;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  transform: scale(0.8);
+  transition: transform 0.3s ease;
+  position: relative;
+  padding: 20px;
+}
+
+/* Scale up when modal is active */
+.modal.active .modal-content {
+  transform: scale(1);
+}
+
+/* Close button */
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.2s ease;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  color: #000;
+  outline: none;
+}
+
+/* Modal body styling */
+.modal-body img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.modal-body h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.modal-body p {
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.modal-body a {
+  display: inline-flex;
+  align-items: center;
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.modal-body a svg {
+  margin-left: 6px;
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  vertical-align: middle;
+}
+
+.modal-body a:hover,
+.modal-body a:focus {
+  text-decoration: underline;
+  outline: none;
+}
+
+.modal-body img {
+  display: block;               /* Make image a block element for centering */
+  margin: 0 auto 15px auto;    /* Center horizontally and add bottom margin */
+  width: 600px;                /* Fixed width */
+  height: 600px;               /* Fixed height */
+  object-fit:  contain;         /* Contain the image within the box without distortion */
+  border-radius: 4px;
+  background-color: #f9f9f9;  /* Optional: light background to highlight image */
+}
+
+@media (max-width: 500px) {
+  .modal-body img {
+    width: 90vw;
+    height: auto;
+  }
+}
