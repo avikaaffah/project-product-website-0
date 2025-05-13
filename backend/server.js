@@ -9,7 +9,7 @@ const app = express();
 
 // CORS configuration - In Docker, frontend will communicate via nginx proxy
 const corsOptions = {
-  origin: ['http://localhost:80', 'http://frontend', 'http://127.0.0.1:80', 'http://34.101.109.175:80'],
+  origin: ['http://34.101.109.175:80', 'http://localhost:80', 'http://frontend', 'http://127.0.0.1:80'],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true,
