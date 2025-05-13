@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Product = require('./models/Product');
 
-mongoose.connect('mongodb://localhost/:27017/productpromo', {
+mongoose.connect('mongodb://localhost:27017/productpromo', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
