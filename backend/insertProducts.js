@@ -145,7 +145,7 @@ const products = [
     description: `The FLIR E8 New Model is an excellent choice for professionals seeking a dependable, 
     easy-to-use thermal camera that combines solid imaging performance with practical features. It's ideal for building diagnostics, 
     electrical inspections, and preventive maintenance tasks where clear thermal visualization is essential.`,
-    pdfUrl: "http://localhost:5000/product-data/alignment/1/Flir E8 New Model.pdf",
+    pdfUrl: "http://localhost:5000/product-data/thermal-camera/1/Flir-E8-New-Model.pdf",
     imageUrl: "http://localhost:5000/product-data/thermal-camera/1/Flir-E8-XT-NEW-MODEL-Thermal-Imaging-Camera.png"
   },
   {
@@ -154,7 +154,7 @@ const products = [
     description: ` the FLIR T530 is a sophisticated thermal imaging camera tailored for professionals who need accurate, 
     high-quality thermal data combined with ease of use and advanced features. Its blend of high-resolution imaging, smart autofocus, 
     MSX enhancement, and ergonomic design makes it a top choice for expert-level thermal inspections.`,
-    pdfUrl: "http://localhost:5000/product-data/thermal-camera/2/flir t530.pdf",
+    pdfUrl: "http://localhost:5000/product-data/thermal-camera/2/flir-t530.pdf",
     imageUrl: "http://localhost:5000/product-data/thermal-camera/2/Flir_T530-1500x1500.jpg"
   },
   {
@@ -163,7 +163,7 @@ const products = [
     description: `Unlock the power of professional-grade thermal imaging right from your smartphone with the FLIR One Edge Pro.
      Designed for on-the-go professionals and enthusiasts alike, this compact and rugged thermal camera delivers stunning thermal clarity with a 
      160 x 120 resolution sensor and FLIR's cutting-edge MSX® technology, which adds crisp visible details to every thermal image.`,
-    pdfUrl: "http://localhost:5000/product-data/thermal-camera/3/flir one egde pro.pdf",
+    pdfUrl: "http://localhost:5000/product-data/thermal-camera/3/flir-one-egde-pro.pdf",
     imageUrl: "http://localhost:5000/product-data/thermal-camera/3/300b9343-3839-40e4-b0a6-23fae7232562_10543383_3.jpg"
   },
   {
@@ -172,7 +172,7 @@ const products = [
     description: `FLIR C5 is a versatile, easy-to-use thermal camera that combines portability with powerful imaging technology. 
     It empowers professionals to quickly identify and document issues, improving efficiency and accuracy in inspections. 
     Whether you're in the field or on-site, the FLIR C5 is a reliable companion for thermal diagnostics.`,
-    pdfUrl: "http://localhost:5000/product-data/thermal-camera/4/FLIR C5.pdf",
+    pdfUrl: "http://localhost:5000/product-data/thermal-camera/4/FLIR-C5.pdf",
     imageUrl: "http://localhost:5000/product-data/thermal-camera/4/c5-wifi-2v-01.png"
   },
   {
@@ -181,7 +181,7 @@ const products = [
     description: `The FLIR E8 New Model is an excellent choice for professionals seeking a dependable, 
     easy-to-use thermal camera that combines solid imaging performance with practical features. It's ideal for building diagnostics, 
     electrical inspections, and preventive maintenance tasks where clear thermal visualization is essential.`,
-    pdfUrl: "http://localhost:5000/product-data/alignment/1/Flir E8 New Model.pdf",
+    pdfUrl: "http://localhost:5000/product-data/thermal-camera/1/Flir-E8-New-Model.pdf",
     imageUrl: "http://localhost:5000/product-data/thermal-camera/1/Flir-E8-XT-NEW-MODEL-Thermal-Imaging-Camera.png"
   },
   {
@@ -190,7 +190,7 @@ const products = [
     description: ` the FLIR T530 is a sophisticated thermal imaging camera tailored for professionals who need accurate, 
     high-quality thermal data combined with ease of use and advanced features. Its blend of high-resolution imaging, smart autofocus, 
     MSX enhancement, and ergonomic design makes it a top choice for expert-level thermal inspections.`,
-    pdfUrl: "http://localhost:5000/product-data/thermal-camera/2/flir t530.pdf",
+    pdfUrl: "http://localhost:5000/product-data/thermal-camera/2/flir-t530.pdf",
     imageUrl: "http://localhost:5000/product-data/thermal-camera/2/Flir_T530-1500x1500.jpg"
   },
   {
@@ -199,7 +199,7 @@ const products = [
     description: `Unlock the power of professional-grade thermal imaging right from your smartphone with the FLIR One Edge Pro.
      Designed for on-the-go professionals and enthusiasts alike, this compact and rugged thermal camera delivers stunning thermal clarity with a 
      160 x 120 resolution sensor and FLIR's cutting-edge MSX® technology, which adds crisp visible details to every thermal image.`,
-    pdfUrl: "http://localhost:5000/product-data/thermal-camera/3/flir one egde pro.pdf",
+    pdfUrl: "http://localhost:5000/product-data/thermal-camera/3/flir-one-egde-pro.pdf",
     imageUrl: "http://localhost:5000/product-data/thermal-camera/3/300b9343-3839-40e4-b0a6-23fae7232562_10543383_3.jpg"
   },
   {
@@ -208,7 +208,7 @@ const products = [
     description: `FLIR C5 is a versatile, easy-to-use thermal camera that combines portability with powerful imaging technology. 
     It empowers professionals to quickly identify and document issues, improving efficiency and accuracy in inspections. 
     Whether you're in the field or on-site, the FLIR C5 is a reliable companion for thermal diagnostics.`,
-    pdfUrl: "http://localhost:5000/product-data/thermal-camera/4/FLIR C5.pdf",
+    pdfUrl: "http://localhost:5000/product-data/thermal-camera/4/FLIR-C5.pdf",
     imageUrl: "http://localhost:5000/product-data/thermal-camera/4/c5-wifi-2v-01.png"
   },
   {
@@ -217,7 +217,7 @@ const products = [
     description: `The FLIR E8 New Model is an excellent choice for professionals seeking a dependable, 
     easy-to-use thermal camera that combines solid imaging performance with practical features. It's ideal for building diagnostics, 
     electrical inspections, and preventive maintenance tasks where clear thermal visualization is essential.`,
-    pdfUrl: "http://localhost:5000/product-data/alignment/1/Flir E8 New Model.pdf",
+    pdfUrl: "http://localhost:5000/product-data/thermal-camera/1/Flir-E8-New-Model.pdf",
     imageUrl: "http://localhost:5000/product-data/thermal-camera/1/Flir-E8-XT-NEW-MODEL-Thermal-Imaging-Camera.png"
   },
   {
@@ -226,7 +226,7 @@ const products = [
     description: ` the FLIR T530 is a sophisticated thermal imaging camera tailored for professionals who need accurate, 
     high-quality thermal data combined with ease of use and advanced features. Its blend of high-resolution imaging, smart autofocus, 
     MSX enhancement, and ergonomic design makes it a top choice for expert-level thermal inspections.`,
-    pdfUrl: "http://localhost:5000/product-data/thermal-camera/2/flir t530.pdf",
+    pdfUrl: "http://localhost:5000/product-data/thermal-camera/2/flir-t530.pdf",
     imageUrl: "http://localhost:5000/product-data/thermal-camera/2/Flir_T530-1500x1500.jpg"
   },
   {
@@ -235,7 +235,7 @@ const products = [
     description: `Unlock the power of professional-grade thermal imaging right from your smartphone with the FLIR One Edge Pro.
      Designed for on-the-go professionals and enthusiasts alike, this compact and rugged thermal camera delivers stunning thermal clarity with a 
      160 x 120 resolution sensor and FLIR's cutting-edge MSX® technology, which adds crisp visible details to every thermal image.`,
-    pdfUrl: "http://localhost:5000/product-data/thermal-camera/3/flir one egde pro.pdf",
+    pdfUrl: "http://localhost:5000/product-data/thermal-camera/3/flir-one-egde-pro.pdf",
     imageUrl: "http://localhost:5000/product-data/thermal-camera/3/300b9343-3839-40e4-b0a6-23fae7232562_10543383_3.jpg"
   },
   {
@@ -244,7 +244,115 @@ const products = [
     description: `FLIR C5 is a versatile, easy-to-use thermal camera that combines portability with powerful imaging technology. 
     It empowers professionals to quickly identify and document issues, improving efficiency and accuracy in inspections. 
     Whether you're in the field or on-site, the FLIR C5 is a reliable companion for thermal diagnostics.`,
-    pdfUrl: "http://localhost:5000/product-data/thermal-camera/4/FLIR C5.pdf",
+    pdfUrl: "http://localhost:5000/product-data/thermal-camera/4/FLIR-C5.pdf",
+    imageUrl: "http://localhost:5000/product-data/thermal-camera/4/c5-wifi-2v-01.png"
+  },
+  {
+    category: "Thermal Camera",
+    name: "Flir E8 New Model",
+    description: `The FLIR E8 New Model is an excellent choice for professionals seeking a dependable, 
+    easy-to-use thermal camera that combines solid imaging performance with practical features. It's ideal for building diagnostics, 
+    electrical inspections, and preventive maintenance tasks where clear thermal visualization is essential.`,
+    pdfUrl: "http://localhost:5000/product-data/thermal-camera/1/Flir-E8-New-Model.pdf",
+    imageUrl: "http://localhost:5000/product-data/thermal-camera/1/Flir-E8-XT-NEW-MODEL-Thermal-Imaging-Camera.png"
+  },
+  {
+    category: "Thermal Camera",
+    name: "Flir T530",
+    description: ` the FLIR T530 is a sophisticated thermal imaging camera tailored for professionals who need accurate, 
+    high-quality thermal data combined with ease of use and advanced features. Its blend of high-resolution imaging, smart autofocus, 
+    MSX enhancement, and ergonomic design makes it a top choice for expert-level thermal inspections.`,
+    pdfUrl: "http://localhost:5000/product-data/thermal-camera/2/flir-t530.pdf",
+    imageUrl: "http://localhost:5000/product-data/thermal-camera/2/Flir_T530-1500x1500.jpg"
+  },
+  {
+    category: "Thermal Camera",
+    name: "Flir One Edge Pro",
+    description: `Unlock the power of professional-grade thermal imaging right from your smartphone with the FLIR One Edge Pro.
+     Designed for on-the-go professionals and enthusiasts alike, this compact and rugged thermal camera delivers stunning thermal clarity with a 
+     160 x 120 resolution sensor and FLIR's cutting-edge MSX® technology, which adds crisp visible details to every thermal image.`,
+    pdfUrl: "http://localhost:5000/product-data/thermal-camera/3/flir-one-egde-pro.pdf",
+    imageUrl: "http://localhost:5000/product-data/thermal-camera/3/300b9343-3839-40e4-b0a6-23fae7232562_10543383_3.jpg"
+  },
+  {
+    category: "Thermal Camera",
+    name: "Flir C5",
+    description: `FLIR C5 is a versatile, easy-to-use thermal camera that combines portability with powerful imaging technology. 
+    It empowers professionals to quickly identify and document issues, improving efficiency and accuracy in inspections. 
+    Whether you're in the field or on-site, the FLIR C5 is a reliable companion for thermal diagnostics.`,
+    pdfUrl: "http://localhost:5000/product-data/thermal-camera/4/FLIR-C5.pdf",
+    imageUrl: "http://localhost:5000/product-data/thermal-camera/4/c5-wifi-2v-01.png"
+  },
+  {
+    category: "Thermal Camera",
+    name: "Flir E8 New Model",
+    description: `The FLIR E8 New Model is an excellent choice for professionals seeking a dependable, 
+    easy-to-use thermal camera that combines solid imaging performance with practical features. It's ideal for building diagnostics, 
+    electrical inspections, and preventive maintenance tasks where clear thermal visualization is essential.`,
+    pdfUrl: "http://localhost:5000/product-data/thermal-camera/1/Flir-E8-New-Model.pdf",
+    imageUrl: "http://localhost:5000/product-data/thermal-camera/1/Flir-E8-XT-NEW-MODEL-Thermal-Imaging-Camera.png"
+  },
+  {
+    category: "Thermal Camera",
+    name: "Flir T530",
+    description: ` the FLIR T530 is a sophisticated thermal imaging camera tailored for professionals who need accurate, 
+    high-quality thermal data combined with ease of use and advanced features. Its blend of high-resolution imaging, smart autofocus, 
+    MSX enhancement, and ergonomic design makes it a top choice for expert-level thermal inspections.`,
+    pdfUrl: "http://localhost:5000/product-data/thermal-camera/2/flir-t530.pdf",
+    imageUrl: "http://localhost:5000/product-data/thermal-camera/2/Flir_T530-1500x1500.jpg"
+  },
+  {
+    category: "Thermal Camera",
+    name: "Flir One Edge Pro",
+    description: `Unlock the power of professional-grade thermal imaging right from your smartphone with the FLIR One Edge Pro.
+     Designed for on-the-go professionals and enthusiasts alike, this compact and rugged thermal camera delivers stunning thermal clarity with a 
+     160 x 120 resolution sensor and FLIR's cutting-edge MSX® technology, which adds crisp visible details to every thermal image.`,
+    pdfUrl: "http://localhost:5000/product-data/thermal-camera/3/flir-one-egde-pro.pdf",
+    imageUrl: "http://localhost:5000/product-data/thermal-camera/3/300b9343-3839-40e4-b0a6-23fae7232562_10543383_3.jpg"
+  },
+  {
+    category: "Thermal Camera",
+    name: "Flir C5",
+    description: `FLIR C5 is a versatile, easy-to-use thermal camera that combines portability with powerful imaging technology. 
+    It empowers professionals to quickly identify and document issues, improving efficiency and accuracy in inspections. 
+    Whether you're in the field or on-site, the FLIR C5 is a reliable companion for thermal diagnostics.`,
+    pdfUrl: "http://localhost:5000/product-data/thermal-camera/4/FLIR-C5.pdf",
+    imageUrl: "http://localhost:5000/product-data/thermal-camera/4/c5-wifi-2v-01.png"
+  },
+  {
+    category: "Thermal Camera",
+    name: "Flir E8 New Model",
+    description: `The FLIR E8 New Model is an excellent choice for professionals seeking a dependable, 
+    easy-to-use thermal camera that combines solid imaging performance with practical features. It's ideal for building diagnostics, 
+    electrical inspections, and preventive maintenance tasks where clear thermal visualization is essential.`,
+    pdfUrl: "http://localhost:5000/product-data/thermal-camera/1/Flir-E8-New-Model.pdf",
+    imageUrl: "http://localhost:5000/product-data/thermal-camera/1/Flir-E8-XT-NEW-MODEL-Thermal-Imaging-Camera.png"
+  },
+  {
+    category: "Thermal Camera",
+    name: "Flir T530",
+    description: ` the FLIR T530 is a sophisticated thermal imaging camera tailored for professionals who need accurate, 
+    high-quality thermal data combined with ease of use and advanced features. Its blend of high-resolution imaging, smart autofocus, 
+    MSX enhancement, and ergonomic design makes it a top choice for expert-level thermal inspections.`,
+    pdfUrl: "http://localhost:5000/product-data/thermal-camera/2/flir-t530.pdf",
+    imageUrl: "http://localhost:5000/product-data/thermal-camera/2/Flir_T530-1500x1500.jpg"
+  },
+  {
+    category: "Thermal Camera",
+    name: "Flir One Edge Pro",
+    description: `Unlock the power of professional-grade thermal imaging right from your smartphone with the FLIR One Edge Pro.
+     Designed for on-the-go professionals and enthusiasts alike, this compact and rugged thermal camera delivers stunning thermal clarity with a 
+     160 x 120 resolution sensor and FLIR's cutting-edge MSX® technology, which adds crisp visible details to every thermal image.`,
+    pdfUrl: "http://localhost:5000/product-data/thermal-camera/3/flir-one-egde-pro.pdf",
+    imageUrl: "http://localhost:5000/product-data/thermal-camera/3/300b9343-3839-40e4-b0a6-23fae7232562_10543383_3.jpg"
+  },
+  {
+    category: "Thermal Camera",
+    name: "Flir C5",
+    description: `FLIR C5 is a versatile, easy-to-use thermal camera that combines portability with powerful imaging technology. 
+    It empowers professionals to quickly identify and document issues, improving efficiency and accuracy in inspections. 
+    Whether you're in the field or on-site, the FLIR C5 is a reliable companion for thermal diagnostics.`,
+    pdfUrl: "http://localhost:5000/product-data/thermal-camera/4/FLIR-C5.pdf",
     imageUrl: "http://localhost:5000/product-data/thermal-camera/4/c5-wifi-2v-01.png"
   }
 ];
