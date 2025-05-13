@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Category Products | Product Mantap!</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Product Mantap!</div>
+    <!-- Add this back button -->
+    <a href="index.html" class="back-button">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+        <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+      </svg>
+      Back to Main
+    </a>
+  </header>
+
+  <main id="category-products">
+    <h1 id="category-title">Loading...</h1>
+    <div id="products-grid" class="products-grid"></div>
+  </main>
+  
+  <section id="contact" class="calm-contact">
+    <div class="section-header">
+      <h2>Contact Us</h2>
+      <div class="header-divider"></div>
+      <p class="header-subtext">We’re here to help you. Reach out anytime.</p>
+    </div>
+  
+    <div class="contact-container">
+      <div class="contact-left">
+        <div class="contact-item">
+          <img src="images/location-icon.svg" alt="Location" class="icon" />
+          <p>123 Business Avenue<br>Jakarta, Indonesia</p>
+        </div>
+      </div>
+  
+      <div class="contact-right">
+        <a href="https://wa.me/+6285156220265?text=Hello%20I'm%20interested%20in%20your%20services" class="contact-item" aria-label="Chat on WhatsApp" target="_blank" rel="noopener noreferrer">
+          <img src="images/whatsapp-icon.png" alt="WhatsApp" class="icon" />
+          <p>+62 851-5622-0265</p>
+        </a>
+  
+        <a href="mailto:pro98majid@gmail.com" class="contact-item" aria-label="Send us an email">
+          <img src="images/email-icon.png" alt="Email" class="icon" />
+          <p>pro98majid@gmail.com</p>
+        </a>
+  
+        <div class="contact-item" aria-label="Phone number">
+          <img src="images/phone-icon.svg" alt="Phone" class="icon" />
+          <p>+62 851-5622-0265</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+  <script src="category.js"></script>
+</body>
+
+<footer style="background-color: #222; color: #eee; padding: 1.5em 0; text-align: center; font-size: 0.9em;">
+  <nav>
+    <ul style="list-style: none; padding: 0; margin: 0 0 1em 0; display: inline-flex; gap: 2em; justify-content: center; flex-wrap: wrap;">
+      <li><a href="index.html#alignment" style="color: #eee; text-decoration: none;">Alignment</a></li>
+      <li><a href="index.html#thermal-camera" style="color: #eee; text-decoration: none;">Thermal Camera</a></li>
+      <li><a href="#contact" style="color: #eee; text-decoration: none;">Contact</a></li>
+    </ul>
+  </nav>
+  <div>&copy; 2025 Product Mantap! All rights reserved.</div>
+</footer>
+</html>
