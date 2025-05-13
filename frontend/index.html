@@ -23,26 +23,106 @@
     </nav>
   </header>
 
-  <section class="hero">
+  <!-- <section class="hero">
     <h1>Discover Our Innovative Products</h1>
     <p>Explore our cutting-edge solutions designed to enhance your workflow and productivity.<br />
     Click on any product to view detailed information.</p>
-  </section>
-
-  <main id="product-container"></main>
-
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <div class="contact-icons">
-      <a href="https://wa.me/+6285156220265" target="_blank" aria-label="WhatsApp">
-        <img src="images/whatsapp-icon.png" alt="WhatsApp" />
-      </a>
-      <a href="mailto:pro98majid@gmail.com" aria-label="Email">
-        <img src="images/email-icon.png" alt="Email" />
-      </a>
+  </section> -->
+  <section class="hero-slider" id="hero-slider">
+    <div class="slides-container">
+      <div class="slide" style="background-image: url('images/image1.jpg');">
+        <div class="slide-text">
+          <h1>Discover Our Innovative Products</h1>
+          <p>Explore our cutting-edge solutions designed to enhance your workflow and productivity.<br />
+          Click on any product to view detailed information.</p>
+        </div>
+      </div>
+      <div class="slide" style="background-image: url('images/image2.jpg');">
+        <div class="slide-text">
+          <h1>Image 2 Title</h1>
+          <p>Description for image 2 goes here.</p>
+        </div>
+      </div>
+      <div class="slide" style="background-image: url('images/image3.jpg');">
+        <div class="slide-text">
+          <h1>Image 3 Title</h1>
+          <p>Description for image 3 goes here.</p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Navigation Arrows -->
+    <button class="nav-arrow prev" aria-label="Previous Slide">&#10094;</button>
+    <button class="nav-arrow next" aria-label="Next Slide">&#10095;</button>
+  
+    <!-- Navigation Dots -->
+    <div class="nav-dots">
+      <button class="dot active" aria-label="Slide 1"></button>
+      <button class="dot" aria-label="Slide 2"></button>
+      <button class="dot" aria-label="Slide 3"></button>
     </div>
   </section>
+  
+  <main id="product-container"></main>
+  <!-- Modal Popup Container -->
+  <div id="product-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title" aria-modal="true">
+    <div class="modal-content" role="document">
+      <button class="modal-close" aria-label="Close modal">&times;</button>
+      <div class="modal-body">
+        <!-- Product details will be injected here dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <section id="contact" class="calm-contact">
+    <div class="section-header">
+      <h2>Contact Us</h2>
+      <div class="header-divider"></div>
+      <p class="header-subtext">We’re here to help you. Reach out anytime.</p>
+    </div>
+  
+    <div class="contact-container">
+      <div class="contact-left">
+        <div class="contact-item">
+          <img src="images/location-icon.svg" alt="Location" class="icon" />
+          <p>123 Business Avenue<br>Jakarta, Indonesia</p>
+        </div>
+      </div>
+  
+      <div class="contact-right">
+        <a href="https://wa.me/+6285156220265?text=Hello%20I'm%20interested%20in%20your%20services" class="contact-item" aria-label="Chat on WhatsApp" target="_blank" rel="noopener noreferrer">
+          <img src="images/whatsapp-icon.png" alt="WhatsApp" class="icon" />
+          <p>+62 851-5622-0265</p>
+        </a>
+  
+        <a href="mailto:pro98majid@gmail.com" class="contact-item" aria-label="Send us an email">
+          <img src="images/email-icon.png" alt="Email" class="icon" />
+          <p>pro98majid@gmail.com</p>
+        </a>
+  
+        <div class="contact-item" aria-label="Phone number">
+          <img src="images/phone-icon.svg" alt="Phone" class="icon" />
+          <p>+62 851-5622-0265</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+
 
   <script src="script.js"></script>
 </body>
+
+<footer style="background-color: #222; color: #eee; padding: 1.5em 0; text-align: center; font-size: 0.9em;">
+  <nav>
+    <ul style="list-style: none; padding: 0; margin: 0 0 1em 0; display: inline-flex; gap: 2em; justify-content: center; flex-wrap: wrap;">
+      <li><a href="index.html#alignment" style="color: #eee; text-decoration: none;">Alignment</a></li>
+      <li><a href="index.html#thermal-camera" style="color: #eee; text-decoration: none;">Thermal Camera</a></li>
+      <li><a href="#contact" style="color: #eee; text-decoration: none;">Contact</a></li>
+    </ul>
+  </nav>
+  <div>&copy; 2025 Product Mantap! All rights reserved.</div>
+</footer>
+
 </html>
